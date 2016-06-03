@@ -1,0 +1,35 @@
+<!DOCTYPE Html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+  <h1> Devine le chiffre </h1>
+  <input type="range" max="2000" min="0">
+  <div class="jeux">
+
+    <p class="jeuxTest"></p>
+    <form name="guess" class="guess">
+      <input type="number" required name="valeur" />
+      <input type="submit" name="go" value="essayer">
+    </form>
+    <form name="playAlone" class="playAlone">
+      <input type="submit" name="playAlone" value="Joue seul">
+    </form>
+    <form name="reload" class="reload">
+      <input type="submit" name="reload" value="rejouer">
+    </form>
+
+  </div>
+
+
+</body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="script.js"></script>
+</html>

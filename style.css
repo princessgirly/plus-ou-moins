@@ -1,0 +1,76 @@
+html, body{
+  text-align: center;
+  margin: auto;
+  background-color:black;
+  background-image: image();
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+h1{
+  color: rgba(255,255,255,.9);
+}
+
+.jeux{
+  text-align: center;
+  margin: auto;
+  background-image: radial-gradient(rgba(255,255,255,.6), rgba(255,255,255,.5) 50px, transparent 160px);
+  border-radius: 50%;
+  height: 250px;
+  width: 360px;
+  padding-top: 150px;
+  color:white;
+}
+
+.jeux input {
+  text-align: center;
+  margin: auto;
+  display:block;
+}
+
+.jeux input[type="number"]{
+  border: 1px solid orange;
+
+}
+
+.jeux p {
+  height: 20px;
+
+}
+
+input[type="submit"]{
+  margin-top: 5px;
+  line-height: 20px;
+  border:1px solid white;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,.1);
+  color:white;
+  box-shadow: inset 1px 2px 3px white, inset 1px -2px 3px white;
+}
+
+input[type="submit"]:hover{
+  box-shadow: inset 1px 2px 3px yellow, inset 1px -2px 3px yellow;
+}
+
+input[type="range"]{
+  width: 50%;
+}
+input[type="range"]:after,
+input[type="range"]:before {
+    position: relative;
+    top: 1em;
+    color: #aaa;
+}
+input[type="range"]:before {
+    left:0em;
+    content: attr(min);
+    color:white;
+}
+input[type="range"]:after {
+    right: 0em;
+    content: attr(max);
+    color:white;
+}
