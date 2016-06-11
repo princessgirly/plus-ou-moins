@@ -1,16 +1,11 @@
 html, body{
   text-align: center;
-  margin: auto;
-  background-color:black;
-  background-image: image();
-  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to top, white, green);
+  background-repeat: no-repeat;
 }
-h1{
+h1 {
   color: rgba(255,255,255,.9);
 }
 
@@ -22,17 +17,18 @@ h1{
   height: 250px;
   width: 360px;
   padding-top: 150px;
-  color:white;
+  color:black;
 }
 
 .jeux input {
   text-align: center;
   margin: auto;
   display:block;
+  height: 40px;
 }
 
 .jeux input[type="number"]{
-  border: 1px solid orange;
+  border: 1px solid black;
 
 }
 
@@ -43,11 +39,12 @@ h1{
 
 input[type="submit"]{
   margin-top: 5px;
-  line-height: 20px;
+  line-height: 5%;
+  width: 30%;
   border:1px solid white;
   border-radius: 10px;
   background-color: rgba(255,255,255,.1);
-  color:white;
+  color:black;
   box-shadow: inset 1px 2px 3px white, inset 1px -2px 3px white;
 }
 
@@ -62,15 +59,15 @@ input[type="range"]:after,
 input[type="range"]:before {
     position: relative;
     top: 1em;
-    color: #aaa;
+    color: black;
 }
 input[type="range"]:before {
     left:0em;
     content: attr(min);
-    color:white;
+    color:black;
 }
 input[type="range"]:after {
     right: 0em;
     content: attr(max);
-    color:white;
+    color:black;
 }
