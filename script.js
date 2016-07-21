@@ -4,7 +4,7 @@ $(document).ready(function() {
   var maxtmp = Math.floor(Math.random() * 1000) + 1000;
 
   var Game = function(max) {
-    // Definition de la propirité answer meme si Max absent
+    // Definition de la propriété answer meme si Max absent
     this.max = max;
     this.answer = max ? Math.floor(Math.random() * max) : Math.floor(Math.random() * 10000);
     this.tantative = 0;
