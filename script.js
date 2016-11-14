@@ -7,7 +7,7 @@ $(document).ready(function() {
     // Definition de la propriété answer meme si Max absent
     this.max = max;
     this.answer = max ? Math.floor(Math.random() * max) : Math.floor(Math.random() * 10000);
-    this.tantative = 0;
+    this.tentative = 0;
     // Definition de la methode test qui dit si le joueur a bien deviner
     this.test = function(guess) {
       if (guess == this.answer) {
