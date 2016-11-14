@@ -8,7 +8,7 @@ $(document).ready(function() {
     this.max = max;
     this.answer = max ? Math.floor(Math.random() * max) : Math.floor(Math.random() * 10000);
     this.tentative = 0;
-    // Definition de la methode test qui dit si le joueur a bien deviner
+    // Definition de la methode test qui dit si le joueur a bien deviné
     this.test = function(guess) {
       if (guess == this.answer) {
         return false;
